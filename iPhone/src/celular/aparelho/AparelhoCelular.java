@@ -1,18 +1,16 @@
 package celular.aparelho;
 
-import celular.menu.internet.NavegadorInternet;
-import celular.menu.ligacao.AparelhoTelefonico;
-import celular.menu.musica.ReprodutorMusica;
+import celular.Iphone.IphoneFuncoes;
+import celular.internet.NavegadorInternet;
+import celular.ligacao.AparelhoTelefonico;
+import celular.musica.ReprodutorMusica;
 
 public class AparelhoCelular {
     public static void main(String[] args) {
-        NavegadorInternet internet = new NavegadorInternet();
-        internet.exibirPagina();
+       IphoneFuncoes iphone = new IphoneFuncoes();
 
-        AparelhoTelefonico ligacao = new AparelhoTelefonico();
-        ligacao.correioVoz();
-
-        ReprodutorMusica musica = new ReprodutorMusica();
-        musica.tocar();
+       Iphone.iphone();
+       
+       
     }
 }
